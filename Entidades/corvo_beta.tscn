@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ettc20er35at"]
+
+[ext_resource type="Script" uid="uid://cfaab1i24n6f1" path="res://Entidades/corvo_beta.gd" id="1_vo8or"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uxq30"]
+
+[node name="CorvoBeta" type="CharacterBody2D" unique_id=1628711633]
+script = ExtResource("1_vo8or")
+
+[node name="CollisionCorvo" type="CollisionShape2D" parent="." unique_id=1869318605]
+shape = SubResource("CapsuleShape2D_uxq30")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1564049593]
+ignore_rotation = false
+enabled = false
+zoom = Vector2(2, 2)
