@@ -3,18 +3,18 @@
 [ext_resource type="PackedScene" uid="uid://ettc20er35at" path="res://Entidades/corvo_beta.tscn" id="1_7i8gy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f0oo2"]
-size = Vector2(224, 61)
+size = Vector2(361, 63.5)
 
 [node name="FaseTeste" type="Node2D" unique_id=136860787]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1958691543]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1300648594]
-position = Vector2(0, 40)
+position = Vector2(-1, 42)
 shape = SubResource("RectangleShape2D_f0oo2")
 
 [node name="Entidades" type="Node2D" parent="." unique_id=977327457]
 
 [node name="CorvoBeta" parent="Entidades" unique_id=1628711633 instance=ExtResource("1_7i8gy")]
-position = Vector2(-2, -11)
+position = Vector2(0, -7)
 gravity = 300
