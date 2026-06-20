@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b8q7msy20m63g"]
+
+[ext_resource type="Script" uid="uid://dh28niyvia8o" path="res://ObjetosInteragiveis/porta.gd" id="1_v65bo"]
+[ext_resource type="PackedScene" uid="uid://cb6kgxi3g1qp2" path="res://ObjetosInteragiveis/interagivel.tscn" id="2_aecg6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(20, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(26, 20)
+
+[node name="Porta" type="Area2D" unique_id=752759123]
+light_mask = 0
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_v65bo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1940095407]
+
+[node name="portaShape" type="CollisionShape2D" parent="." unique_id=196810307]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Interagivel" parent="." unique_id=333049315 instance=ExtResource("2_aecg6")]
+interact_name = "UsarPorta"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interagivel" unique_id=1369639479]
+shape = SubResource("RectangleShape2D_yf5fn")

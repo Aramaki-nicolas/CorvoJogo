@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cb6kgxi3g1qp2"]
+
+[ext_resource type="Script" uid="uid://bjql2d48i3af" path="res://ObjetosInteragiveis/interagivel.gd" id="1_p8gbm"]
+
+[node name="Interagivel" type="Area2D" unique_id=333049315]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_p8gbm")

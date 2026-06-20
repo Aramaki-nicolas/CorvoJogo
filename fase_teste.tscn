@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://buysrwx21cbaj"]
 
 [ext_resource type="PackedScene" uid="uid://ettc20er35at" path="res://Entidades/corvo_beta.tscn" id="1_7i8gy"]
+[ext_resource type="PackedScene" uid="uid://b8q7msy20m63g" path="res://ObjetosInteragiveis/porta.tscn" id="2_4oofb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f0oo2"]
 size = Vector2(361, 63.5)
@@ -16,5 +17,10 @@ shape = SubResource("RectangleShape2D_f0oo2")
 [node name="Entidades" type="Node2D" parent="." unique_id=977327457]
 
 [node name="CorvoBeta" parent="Entidades" unique_id=1628711633 instance=ExtResource("1_7i8gy")]
-position = Vector2(0, -7)
+position = Vector2(-1, -7)
 gravity = 300
+
+[node name="faseInteragiveis" type="Node2D" parent="." unique_id=1117175607]
+
+[node name="Porta" parent="faseInteragiveis" unique_id=752759123 instance=ExtResource("2_4oofb")]
+position = Vector2(-96, 1)
