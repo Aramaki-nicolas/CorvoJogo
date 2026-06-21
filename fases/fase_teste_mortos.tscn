@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dcu4ayc06f1l2"]
+
+[ext_resource type="PackedScene" uid="uid://ettc20er35at" path="res://Entidades/corvo_beta.tscn" id="1_jyln2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(577, 20)
+
+[node name="fase_testeMortos" type="Node2D" unique_id=160264385]
+
+[node name="CorvoBeta" parent="." unique_id=1628711633 instance=ExtResource("1_jyln2")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=267836828]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=142549285]
+position = Vector2(-1.5, 29)
+shape = SubResource("RectangleShape2D_g4v7s")

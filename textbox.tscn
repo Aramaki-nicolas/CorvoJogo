@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bkqn23wsfny5u"]
+
+[sub_resource type="Theme" id="Theme_g4v7s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yf5fn"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+
+[node name="Textbox" type="CanvasLayer" unique_id=1629751355]
+metadata/_edit_vertical_guides_ = [1106.0]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=736499359]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -176.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 20
+
+[node name="Panel" type="Panel" parent="MarginContainer" unique_id=236570611]
+layout_mode = 2
+theme = SubResource("Theme_g4v7s")
+theme_override_styles/panel = SubResource("StyleBoxFlat_yf5fn")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=1947524817]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer" unique_id=1524685810]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer" unique_id=1502508714]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer" unique_id=1485678973]
+layout_mode = 2
+text = "*"
+label_settings = SubResource("LabelSettings_yf5fn")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer" unique_id=125653680]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Texto"
+label_settings = SubResource("LabelSettings_g4v7s")

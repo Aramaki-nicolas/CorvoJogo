@@ -18,3 +18,7 @@ shape = SubResource("CapsuleShape2D_uxq30")
 zoom = Vector2(2, 2)
 
 [node name="InteractionComponent" parent="." unique_id=131078434 instance=ExtResource("2_eitpj")]
+
+[node name="mudarTimer" type="Timer" parent="." unique_id=650377623]
+wait_time = 4.0
+one_shot = true

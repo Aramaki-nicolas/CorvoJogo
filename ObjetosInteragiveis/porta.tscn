@@ -22,7 +22,6 @@ position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="Interagivel" parent="." unique_id=333049315 instance=ExtResource("2_aecg6")]
-interact_name = "UsarPorta"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interagivel" unique_id=1369639479]
 shape = SubResource("RectangleShape2D_yf5fn")
